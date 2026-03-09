@@ -2,7 +2,7 @@ import { loadTodos } from "./storage.js";
 import { renderTodos } from "./ui.js";
 import { setupEvents } from "./service.js";
 
-const todos = loadTodos();
+const tasks = loadTodos();
 
-renderTodos(todos);
-setupEvents(todos);
+renderTodos(tasks);
+setupEvents(tasks);

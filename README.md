@@ -23,20 +23,14 @@ Este proyecto fue creado como práctica para trabajar con **manipulación del DO
 
 ## 🖼 Preview
 
-    <section style="display: flex; flex-direction: column; gap: 20px;">
-        <figure>
-            <img src="./assets/screenshots/lista-tareas1.png" width="50">
-            <figcaption>Pagina Inicio App</figcaption>
-        </figure>
-        <figure>
-            <img src="./assets/screenshots/lista-tareas2.png" width="50">
-            <figcaption>Prueba carga item lista</figcaption>
-        </figure>
-        <figure>
-            <img src="./assets/screenshots/lista-tareas3.png" width="50">
-            <figcaption>Tarea marcada como realizada</figcaption>
-        </figure>
-    </section>
+- Inicio  
+  ![inicio](./assets/screenshots/lista-tareas1.png)
+
+-  Agregar tarea
+  ![Agregada](./assets/screenshots/lista-tareas2.png)
+
+- Marcar como completada   
+  ![Marcada](./assets/screenshots/lista-tareas3.png)
 
 ---
 

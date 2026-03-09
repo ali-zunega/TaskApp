@@ -4,43 +4,55 @@ import { renderTodos } from "./ui.js";
 export function setupEvents(tasks) {
   const form = document.querySelector("#todo-form");
   const input = document.querySelector("#todo-input");
+  const list = document.querySelector("#todo-list");
 
+  // EVENTO: Agregar tarea
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
     const text = input.value.trim();
 
     if (text === "") return;
 
-    const task = {
+    const newTask = {
       id: Date.now(),
       text: text,
       completed: false,
     };
 
-    tasks.push(task);
-
+    tasks.push(newTask);
     saveTodos(tasks);
     renderTodos(tasks);
-
     input.value = "";
   });
 
-
-  const list = document.querySelector("#todo-list");
-
+  // EVENTO: Delegación de eventos en la lista (Borrar y Completar)
   list.addEventListener("click", (e) => {
-    if (e.target.closest(".delete-btn")) {
-      const button = e.target.closest(".delete-btn");
-      const id = Number(button.dataset.id);
+    
+    // Lógica para Borrar
+    const deleteBtn = e.target.closest(".delete-btn");
+    if (deleteBtn) {
+      const id = Number(deleteBtn.dataset.id);
+      
+      // Filtramos y modificamos el array original por referencia
+      const index = tasks.findIndex(t => t.id === id);
+      if (index !== -1) {
+        tasks.splice(index, 1); 
+        saveTodos(tasks);
+        renderTodos(tasks);
+      }
+    }
 
-      const updatedTasks = tasks.filter((task) => task.id !== id);
+    // Lógica para Completar (Checkbox)
+    if (e.target.classList.contains("todo-checkbox")) {
+      const li = e.target.closest("li");
+      const id = Number(li.dataset.id);
 
-      tasks.length = 0;
-      tasks.push(...updatedTasks);
-
-      saveTodos(tasks);
-      renderTodos(tasks);
+      const task = tasks.find((t) => t.id === id);
+      if (task) {
+        task.completed = e.target.checked;
+        saveTodos(tasks);
+        renderTodos(tasks); // Renderizamos para que se apliquen estilos de completado si los tienes
+      }
     }
   });
 }
