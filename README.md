@@ -21,19 +21,17 @@ Este proyecto fue creado como práctica para trabajar con **manipulación del DO
 ---
 
 ## 🖼 Preview
-```
-<ul>
-    <li><img src="/assets/screenshots/lista-tareas1.png" alt="Preview App TasksApp Inicio"/></li>
-    <li><img src="/assets//screenshots/lista-tareas2.png" alt="Preview App TasksApp Carga tarea" /></li>
-    <li><img src="/assets//screenshots/lista-tareas3.png" alt="Preview App TasksApp Tarea marcada hecha" /></li>
-</ul>
-```
 
+<ul>
+    <li>Pantalla inicial <img src="/assets/screenshots/lista-tareas1.png" alt="Preview App TasksApp Inicio" width="500"/></li>
+    <li>Carga tarea <img src="/assets//screenshots/lista-tareas2.png" alt="Preview App TasksApp Carga tarea" width="500" /></li>
+    <li>Tarea marcada como realizada <img src="/assets//screenshots/lista-tareas3.png" alt="Preview App TasksApp Tarea marcada hecha" width="500" /></li>
+</ul>
 
 ---
 ## Live Demo
 
-https://ali-zunega.github.io/taskapp
+[Demo de App](https://ali-zunega.github.io/TaskApp/)
 
 ---
 
