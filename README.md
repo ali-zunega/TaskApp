@@ -1,4 +1,5 @@
 # TaskApp
+
 # 📝 TaskApp
 
 Una aplicación simple de **lista de tareas (Todo List)** construida con **HTML, CSS y JavaScript puro**, que permite agregar, completar y eliminar tareas.
@@ -10,37 +11,47 @@ Este proyecto fue creado como práctica para trabajar con **manipulación del DO
 
 ## ✨ Features
 
-* ➕ Agregar nuevas tareas
-* ✔️ Marcar tareas como completadas
-* 🗑 Eliminar tareas
-* 💾 Persistencia usando **LocalStorage**
-* ⌨️ Agregar tareas presionando **Enter**
-* 📱 Interfaz simple y responsive
-* 🎨 Estilo moderno con layout tipo *card*
+- ➕ Agregar nuevas tareas
+- ✔️ Marcar tareas como completadas
+- 🗑 Eliminar tareas
+- 💾 Persistencia usando **LocalStorage**
+- ⌨️ Agregar tareas presionando **Enter**
+- 📱 Interfaz simple y responsive
+- 🎨 Estilo moderno con layout tipo _card_
 
 ---
 
 ## 🖼 Preview
 
-<ul align="center">
-    <li>Pantalla inicial <img src="/assets/screenshots/lista-tareas1.png" alt="Preview App TasksApp Inicio" width="500"/></li>
-    <li>Carga tarea <img src="/assets//screenshots/lista-tareas2.png" alt="Preview App TasksApp Carga tarea" width="500" /></li>
-    <li>Tarea marcada como realizada <img src="/assets//screenshots/lista-tareas3.png" alt="Preview App TasksApp Tarea marcada hecha" width="500" /></li>
-</ul>
+    <section style="display: flex; flex-direction: column; gap: 20px;">
+        <figure>
+            <img src="./assets/screenshots/lista-tareas1.png" width="50">
+            <figcaption>Pagina Inicio App</figcaption>
+        </figure>
+        <figure>
+            <img src="./assets/screenshots/lista-tareas2.png" width="50">
+            <figcaption>Prueba carga item lista</figcaption>
+        </figure>
+        <figure>
+            <img src="./assets/screenshots/lista-tareas3.png" width="50">
+            <figcaption>Tarea marcada como realizada</figcaption>
+        </figure>
+    </section>
 
 ---
+
 ## Live Demo
 
-[Demo de App](https://ali-zunega.github.io/TaskApp/)
+[Demo App](https://ali-zunega.github.io/TaskApp/)
 
 ---
 
 ## 🛠 Tecnologías utilizadas
 
-* **HTML5**
-* **CSS3**
-* **JavaScript (ES6 modules)**
-* **LocalStorage API**
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6 modules)**
+- **LocalStorage API**
 
 ---
 
@@ -73,7 +84,7 @@ taskapp
 1. Clonar el repositorio
 
 ```
-git clone https://github.com/ali-zunega/taskapp.git
+git clone https://github.com/ali-zunega/TaskApp.git
 ```
 
 2. Entrar al proyecto
@@ -89,22 +100,22 @@ cd taskapp
 
 ## 📚 Conceptos practicados
 
-* Manipulación del **DOM**
-* Manejo de **eventos**
-* Uso de **LocalStorage**
-* Separación de responsabilidades en JavaScript
-* Organización básica de un proyecto frontend
-* Diseño de interfaces simples y responsivas
+- Manipulación del **DOM**
+- Manejo de **eventos**
+- Uso de **LocalStorage**
+- Separación de responsabilidades en JavaScript
+- Organización básica de un proyecto frontend
+- Diseño de interfaces simples y responsivas
 
 ---
 
 ## 🚀 Posibles mejoras futuras
 
-* Filtros de tareas (**All / Active / Completed**)
-* Contador de tareas pendientes
-* Botón para eliminar tareas completadas
-* Animaciones al agregar o eliminar tareas
-* Modo oscuro
+- Filtros de tareas (**All / Active / Completed**)
+- Contador de tareas pendientes
+- Botón para eliminar tareas completadas
+- Animaciones al agregar o eliminar tareas
+- Modo oscuro
 
 ---
 
