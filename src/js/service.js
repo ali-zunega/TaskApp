@@ -5,8 +5,6 @@ export function setupEvents(tasks) {
   const form = document.querySelector("#todo-form");
   const input = document.querySelector("#todo-input");
 
-  
-
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -28,4 +26,21 @@ export function setupEvents(tasks) {
     input.value = "";
   });
 
+
+  const list = document.querySelector("#todo-list");
+
+  list.addEventListener("click", (e) => {
+    if (e.target.closest(".delete-btn")) {
+      const button = e.target.closest(".delete-btn");
+      const id = Number(button.dataset.id);
+
+      const updatedTasks = tasks.filter((task) => task.id !== id);
+
+      tasks.length = 0;
+      tasks.push(...updatedTasks);
+
+      saveTodos(tasks);
+      renderTodos(tasks);
+    }
+  });
 }

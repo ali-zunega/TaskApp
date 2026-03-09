@@ -1,8 +1,16 @@
 export function renderTodos(tasks) {
 
   const list = document.querySelector("#todo-list");
+  const emptyMessage = document.querySelector("#empty-message");
 
   list.innerHTML = "";
+
+  if (tasks.length === 0) {
+    emptyMessage.style.display = "block";
+    return;
+  }
+
+  emptyMessage.style.display = "none";
 
   tasks.forEach(task => {
 
@@ -13,9 +21,11 @@ export function renderTodos(tasks) {
         <input class="todo-checkbox" type="checkbox" ${task.completed ? "checked" : ""}>
         ${task.text}
       </label>
-      <button class="delete-btn" data-id="${task.id}"></button>
+      <button class="delete-btn" data-id="${task.id}">
+      </button>
     `;
 
+    
     list.appendChild(li);
 
   });

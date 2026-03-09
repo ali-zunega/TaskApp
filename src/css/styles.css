@@ -2,7 +2,6 @@
 
     --primary: #64d993;
     --background: linear-gradient(0deg,rgba(177, 224, 162, 1) 0%, rgba(126, 164, 214, 1) 100%) no-repeat fixed;
-
     --radius: 8px;
 
 }
@@ -30,6 +29,12 @@ h1 {
         0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
+#empty-message {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}
+
 #todo-form {
     display: flex;
     gap: 10px;
@@ -39,12 +44,9 @@ h1 {
 
 #todo-input {
     flex: 1;
-
     padding: 12px 14px;
-
     border: 1px solid #ddd;
     border-radius: 8px;
-
     font-size: 16px;
 }
 
@@ -65,7 +67,7 @@ h1 {
     transform: translateY(-1px);
 }
 
-#todo-form button:active {
+form button:active {
     transform: translateY(0);
 }
 
@@ -124,7 +126,6 @@ li:has(input:checked) {
 .delete-btn {
     width: 24px;
     height: 24px;
-
     background-image: url("../../assets/trashcan.png");
     background-color: transparent;
     background-size: contain;
