@@ -1,3 +1,4 @@
+// Manejo de almacenamiento en localStorage
 const KEY = "tasks";
 
 export function loadTodos() {

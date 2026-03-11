@@ -43,6 +43,7 @@ export function setupEvents(tasks) {
     }
 
     // Lógica para Completar (Checkbox)
+    // Renderiza todas las tareas para que el estado del checkbox se actualice correctamente
     if (e.target.classList.contains("todo-checkbox")) {
       const li = e.target.closest("li");
       const id = Number(li.dataset.id);
@@ -51,7 +52,7 @@ export function setupEvents(tasks) {
       if (task) {
         task.completed = e.target.checked;
         saveTodos(tasks);
-        renderTodos(tasks); // Renderizamos para que se apliquen estilos de completado si los tienes
+        renderTodos(tasks); 
       }
     }
   });

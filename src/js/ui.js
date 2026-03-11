@@ -15,7 +15,7 @@ export function renderTodos(tasks) {
     const li = document.createElement("li");
     li.dataset.id = task.id;
 
-    // Si la tarea está completada, añadimos la clase que ya tienes en tu CSS
+    // Si la tarea está completada, añadimos la clase "completed" para el estilo
     if (task.completed) {
       li.classList.add("completed"); 
     }
